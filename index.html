@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu__wrapper">
+        <div class="menu__bar">
+          <a href="#acceuil" title="Logo" class="logo"> BRUCE WAYNE </a>
+          <img
+            class="menu-icon"
+            src="./images/carre-1.svg"
+            alt="Burger Menu"
+            onclick="toggleMenu(this)"
+          />
+          <ul class="navigation">
+            <li>
+              <a href="#port">PORTFOLIO </a>
+            </li>
+            <li>
+              <a href="#apropos"> A PROPOS</a>
+            </li>
+            <li>
+              <a href="#contact"> CONTACT </a>
+            </li>
+            <!--
+              <li>
+                <a href="#contact-us" title="Contact Us"> Contact Us </a>
+              </li>
+              -->
+          </ul>
+        </div>
+      </div>
+      <!--
+      <nav>
+        <div class="nav-item1"><p>BRUCE WAYNE</p></div>
+        <div class="nav-item2">
+          <div class="item2-a">PORTFOLIO</div>
+          <div class="item2-b">A PROPOS</div>
+          <div class="item2-c">CONTACT</div>
+        </div>
+      </nav>
+      -->
+    </header>
+    <main>
+      <section id="acceuil">
+        <img src="./images/profile.png" alt="profile"/>
+        <h1 id="website">Bruce Wayne</h1>
+        <p class="metier">Développeur web</p>
+      </section>
+      <section class="portfolio" id="port">
+        <h1>PORTFOLIO</h1>
+
+        <div class="portfolio1">
+          <div class="prf-item1">
+            <img src="./images/cabin.png" alt="cabin"/>
+          </div>
+          <div class="prf-item2">
+            <img src="./images/cake.png" alt="cake"/>
+          </div>
+          <div class="prf-item3">
+            <img src="./images/circus.png" alt="circus"/>
+          </div>
+          <div class="prf-item4">
+            <img src="./images/game.png" alt="game"/>
+          </div>
+          <div class="prf-item5">
+            <img src="./images/submarine.png" alt="submarine"/>
+          </div>
+          <div class="prf-item6">
+            <img src="./images/safe.png" alt="safe"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="apropos">
+        <h1>A PROPOS</h1>
+        <div class="apropos1">
+          <div class="apro-item1">
+            <p class="titre">Formation</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              unde ipsa soluta possimus, reprehenderit similique odio corrupti
+              suscipit et pariatur ex earum? Minima nisi exercitationem
+              deleniti, voluptatum accusamus et consequatur, adipisci totam
+              reiciendis sit cum enim optio similique placeat, fugiat dolores
+              architecto sunt quos? Rem quas impedit ratione quibusdam tenetur
+              similique atque illo odit earum quos tempore saepe soluta,
+              quisquam neque repudiandae perspiciatis culpa magni aut ab?
+              Commodi, facere voluptates?
+            </p>
+          </div>
+          <div class="apro-item2">
+            <p class="titre">Expérience</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+              perferendis non rem consequuntur rerum optio mollitia illum
+              maiores! Ratione blanditiis quae atque commodi voluptate est quos
+              inventore eveniet corporis omnis fugit odit aperiam laboriosam et
+              officia cumque quisquam, voluptatem dolorem provident hic suscipit
+              similique quis expedita rem. Ut assumenda voluptates cupiditate
+              consequatur ipsa laborum eius sint odit minus alias architecto,
+              dicta iste ea. Quisquam voluptas explicabo praesentium dolor
+              dolore sed.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1>CONTACTEZ-MOI</h1>
+        <hr />
+        <form action="#">
+          <div class="nom">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom"/>
+          </div>
+
+          <div class="prenom">
+            <label for="prenom">prenom</label>
+            <input type="text" name="prenom" id="prenom"/>
+          </div>
+          <div class="Email">
+            <label for="Email">Email</label>
+            <input type="Email" name="Email" id="Email"/>
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="7" cols="30"></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer1">
+        <div class="footer-item1">
+          <p class="titre2">Adresse</p>
+          <p>Gothan City, DC Universe</p>
+        </div>
+        <div class="footer-item2">
+          <p class="titre2">Mes réseaux</p>
+          <div class="resou">
+            <a href="#"><img src="./images/facebook.png" alt="facbook"/></a>
+            <a href="#"><img src="./images/logo-linkedin.png" alt="linkden"/></a>
+            <a href="#"><img src="./images/signe-twitter.png" alt="twiter"/></a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer2">
+        <p>Copyrigth</p>
+        <img
+          src="./images/symbole-du-droit-dauteur.png"
+          alt="copyrigth"
+          width="10"
+          height="10"
+        />
+        <p>Bruce Wayne Ltd</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
